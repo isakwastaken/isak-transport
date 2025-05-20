@@ -1,8 +1,4 @@
-ESX = nil
-
-TriggerEvent("esx:getSharedObject", function(library) 
-	ESX = library 
-end)
+ESX = exports["es_extended"]:getSharedObject()
 
 RegisterServerEvent('isak-transport:teleportentity')
 AddEventHandler('isak-transport:teleportentity', function(object, x, y, z)
